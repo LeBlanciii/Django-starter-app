@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% block title %}Register{% endblock %}
+{% block content %}
+    {% if registered %}
+        <strong>Thank you for registering!</strong>
+        <a href="{% url 'accounts:user_login' %}">Login</a><br/>
+    {% else %}
+        <div class="container col-lg-offset-3 col-lg-9" id="register-container">
+            <div class="jumbotron" id="register-jumbotron">
+                <h2 class="no-margin-t">Create Account</h2>
+                {% if messages %}
+                    <ul class="list-group">
+                        {% for message in messages %}
+                            <li class="list-group-item list-group-item-action list-group-item-warning">
+                                {{ message }}
+                            </li>
+                        {% endfor %}
+                    </ul>
+                {% endif %}
+                <form method="post">
+                    {% csrf_token %}
+                    {% for field in user_form %}
+                        {% for error in field.errors %}
+                            {{ error }}
+                        {% endfor %}
+                        <div class="form-group row user-form-field {% if field.errors %}has-error{% endif %}">
+                            <div class="col-sm-offset-1 col-sm-10">
+                                {{ field }}
+                            </div>
+                        </div>
+                    {% endfor %}
+                    <div class="form-group row">
+                        <div class="col-sm-offset-1 col-sm-10">
+                            <button type="submit" class="btn btn-primary btn-lg btn-block">Create</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    {% endif %}
+{% endblock %}

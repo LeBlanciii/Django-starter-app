@@ -1,0 +1,86 @@
+* {
+    border-radius: 0 !important;
+}
+
+body {
+    background: #1D272E;
+    background: #D9B310;
+    background: #FDFEFE;
+    background: #328BC3;
+    background: #0B3C5D;
+}
+
+/*.farmerbuds-logo {*/
+    /*width: 50px;*/
+    /*height: 50px;*/
+/*}*/
+
+/*.jumbotron p {*/
+    /*color: #FDFEFE;*/
+    /*max-width: 75%;*/
+    /*margin: 1em auto 2em;*/
+/*}*/
+
+/*.jumbotron {*/
+    /*background: #0B3C5D;*/
+    /*color: #FDFEFE;*/
+    /*height: 100%;*/
+
+/*}*/
+
+/*.navbar + .jumbotron {*/
+    /*margin-top: -20px;*/
+/*}*/
+
+/*.navbar {*/
+    /*position: relative;*/
+    /*margin-bottom: 0;*/
+/*}*/
+
+/*.navbar-right {*/
+    /*padding-right: 15px;*/
+/*}*/
+
+/*select {*/
+    /*text-align: center;*/
+    /*text-align-last: center;*/
+/*}*/
+
+/*#register-jumbotron, #login-jumbotron {*/
+    /*background: #328BC3;*/
+    /*border: solid #FDFEFE;*/
+/*}*/
+
+/*#register-container, #login-container {*/
+    /*max-width: 500px;*/
+/*}*/
+
+/*.user-form-field {*/
+
+/*}*/
+
+/*.btn-primary {*/
+    /*!*background-color: #0B3C5D;*!*/
+    /*background-color: #D9B310;*/
+/*}*/
+
+/*.no-margin {*/
+    /*margin: 0;*/
+/*}*/
+
+/*.no-margin-t {*/
+    /*margin-top: 0;*/
+/*}*/
+
+/*.has-error .form-control {*/
+    /*border-color: red;*/
+    /*border-width: 1px;*/
+/*}*/
+
+/*.list-group-item {*/
+    /*color: #0B3C5D;*/
+/*}*/
+
+/*.hidden {*/
+    /*display: none;*/
+/*}*/
